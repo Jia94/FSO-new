@@ -1,0 +1,1 @@
+#!/bin/shftp -n<<!open 10.36.5.24user aaa passwdprombincd /ddd/ddd/mkdir 2018070300cd 2018070300mput *.pngbye!

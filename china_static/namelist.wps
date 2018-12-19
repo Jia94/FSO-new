@@ -1,0 +1,40 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ start_date = 'sccyy-smm-sdd_shh:00:00',
+ end_date   = 'eccyy-emm-edd_ehh:00:00',
+ interval_seconds = run_interval,
+ io_form_geogrid = 2,
+/
+
+&geogrid
+ parent_id         =   1,   1,   2,
+ parent_grid_ratio =   1,   3,   3,
+ i_parent_start    =   1, 96,  61,
+ j_parent_start    =   1, 10,  51,
+ e_we              = 340, 186, 244,
+ e_sn              = 268, 210, 247,
+ geog_data_res     = 'default',
+ dx =15000.00,
+ dy =15000.00,
+ map_proj = 'lambert',
+ ref_lat   =  35.0,
+ ref_lon   = 105.0,
+ truelat1  =  30.0,
+ truelat2  =  60.0,
+ stand_lon = 115.0,
+ geog_data_path = '/gjx_static'
+ opt_geogrid_tbl_path = '/gjx_static'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'GFS',
+/
+
+&metgrid
+ fg_name = 'GFS',
+ io_form_metgrid = 2, 
+/
+ opt_metgrid_tbl_path = '/gjx_static'
+ constants_name = 'SST', 'QNWFA_QNIFA_Monthly_GFS'
