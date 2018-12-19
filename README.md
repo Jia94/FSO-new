@@ -7,4 +7,4 @@ china_static: WRF 和 WRFDA namelist等静态文件
 
 scripts:各步骤运行脚本
 
-singulairty:simg制作所用的Dockerfile文件和Singularity文件
+Singulairty:simg制作所用的Dockerfile文件和Singularity文件
